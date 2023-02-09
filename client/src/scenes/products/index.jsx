@@ -96,28 +96,18 @@ function Products() {
             "& > div" : {gridColumn: isNonMobile ? undefined : "span 4"}
           }}
         >
-          {data.map(({
-            _id,
-            name,
-            description,
-            price, 
-            rating, 
-            category, 
-            supply, 
-            stat
-          }) => (
+          {data.map(({_id, name, description, price, rating, category, supply, stat}) => (
             <Product
-            key={_id}
-            _id={_id}
-            name={name}
-            description={description}
-            price={price} 
-            rating={rating} 
-            category={category}
-            supply={supply} 
-            stat={stat}
-            
-            />
+              key={_id}
+              _id={_id}
+              name={name}
+              description={description}
+              price={price} 
+              rating={rating} 
+              category={category}
+              supply={supply} 
+              stat={stat}
+              />
           ))}
         </Box>
       ) : (
@@ -128,3 +118,27 @@ function Products() {
 }
 
 export default Products;
+
+// (({
+//   _id,
+//   name,
+//   description,
+//   price, 
+//   rating, 
+//   category, 
+//   supply, 
+//   stat
+// }) => (
+//   <Product
+//   key={_id}
+//   _id={_id}
+//   name={name}
+//   description={description}
+//   price={price} 
+//   rating={rating} 
+//   category={category}
+//   supply={supply} 
+//   stat={stat}
+  
+//   />
+// ))
