@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Box, useTheme } from "@mui/material";
 import { DataGrid } from "@mui/x-data-grid";
 import { useGetTransactionsQuery } from "state/api";
@@ -21,6 +21,10 @@ const Transactions = () => {
     sort: JSON.stringify(sort),
     search,
   });
+
+  useEffect(() => {
+    console.log(data)
+  }, [data])
 
   const columns = [
     {
