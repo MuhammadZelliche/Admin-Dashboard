@@ -8,7 +8,6 @@ const BreakdownChart = ({ isDashboard = false }) => {
   const theme = useTheme();
 
   if (!data || isLoading) return "Loading...";
-  console.log("🚀 ~ file: BreakdownChart.jsx:140 ~ BreakdownChart ~ data", data)
 
   const colors = [
     theme.palette.secondary[500],
