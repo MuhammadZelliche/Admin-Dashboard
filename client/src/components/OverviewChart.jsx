@@ -18,7 +18,7 @@ function OverviewChart({ isDashboard = false, view }) {
     };
 
     const totalUnitsLine = {
-      id: "totalSales",
+      id: "totalUnits",
       color: theme.palette.secondary[600],
       data: [],
     };
