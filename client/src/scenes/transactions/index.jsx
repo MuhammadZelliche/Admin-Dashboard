@@ -22,10 +22,6 @@ const Transactions = () => {
     search,
   });
 
-  useEffect(() => {
-    console.log(data)
-  }, [data])
-
   const columns = [
     {
       field: "_id",
